@@ -70,7 +70,6 @@ export const Login: React.FC = () => {
           <i className="button__icon fas fa-chevron-right"></i>
         </button>
       </form>
-      a
     </div>
   );
 };
