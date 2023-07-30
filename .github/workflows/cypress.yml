@@ -25,10 +25,10 @@ jobs:
         
       - name: Start the server (Replace this with your server invocation)
         working-directory: ./client  # Set the working directory to the 'client' folder
-        run: npm start  # Replace 'npm start' with the command to start your server
-
+        run: npm start &  # Replace 'npm start' with the command to start your server
+     
       - name: Wait for the server to be ready
-        run: npx wait-on http://localhost:3000  # Wait for the server to be ready before running tests
+        run: sleep 20 # Adjust the sleep time as needed
 
       - name: Run Cypress tests
         working-directory: ./client  # Set the working directory to the 'client' folder
