@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install dependencies
+        working-directory: ./client
         run: npm install
       - name: Cypress run
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
