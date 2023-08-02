@@ -44,6 +44,7 @@ describe("Login", () => {
         CHEAPEST_PHONE.LINK.classList.add(CHEAPEST_PHONE_CLASS_NAME);
         cy.get(SELECTORS.CHEAPEST_PHONE).click();
         cy.get(SELECTORS.ADD_TO_CART).click();
+
       })
     });
   });
